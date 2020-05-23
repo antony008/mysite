@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    {% for pd in product %}
+        <div>{{ pd[0] }} {{ pd[1] }} {{ pd[2] }} {{ pd[3] }}</div>
+    {% endfor %}
+    <h1>Total: {{ total }}</h1>
+  </body>
+</html>

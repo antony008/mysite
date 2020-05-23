@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+          
+
+          
+            <div class="album py-5 bg-light">
+              <div class="container">
+                <h1>{{message.name}}</h1><br>
+                <h1>環保做法: {{ message.desc }}</h1>
+                <img src='{{ message.img }}' alt="{{ message.title }}">
+              </div>
+            </div>  
+            <br><br><br> 
+            
+{% endblock %}    
+             
+                
+          

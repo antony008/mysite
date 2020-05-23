@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block main %}
+      
+        <div class="album py-5 bg-light">
+          <div class="container">
+      
+            <div class="row">
+              {% for key, pd in products.items() %}
+                <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="{{pd.img}}" class="card-img-top" alt='{{ pd.name }}' width="250" height="250">
+                  <div class="card-body">
+                    <h4>{{pd.name}}</h4>
+                    <p class="card-text">{{ pd.desc }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="product/{{pd.id}}" class="btn btn-sm btn-outline-secondary">View</a>
+                        <a href="product/{{pd.id}}/edit" class="btn btn-sm btn-outline-secondary">Edit</a>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+              </div>
+              </div>
+              </div>
+ 
+      <footer class="text-muted">
+        <div class="container">
+          <p class="float-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+          <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.4/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+      </footer>
+
+      
+
+    
+{% endblock %}
+
+
+

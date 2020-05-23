@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyShop</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>cartedit</h1>
+
+    <form action="/cart/edit" method="post">
+      <div>
+        <label for="pen">pen:</label>
+        <input id="pen" type="text" name="pen" value="{{cart[0].get('num')}}">
+      </div>
+      <div>
+        <label for="cup">cup:</label>
+        <input id="cup" type="text" name="cup" value="{{cart[1].get('num')}}">
+      </div>
+      <div>
+        <label for="notebook">notebook:</label>
+        <input id="notebook" type="text" name="notebook" value="{{cart[2].get('num')}}">
+      </div>
+      <div>
+        <label for="pencil">pencil:</label>
+        <input id="pencil" type="text" name="pencil" value="{{cart[3].get('num')}}">
+      </div>
+      <p><button type="submit">Submit</button></p>
+  </form>
+  </body>
+</html>

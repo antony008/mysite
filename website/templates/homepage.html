@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block main %}
+          
+            <section class="jumbotron text-center">
+              <div class="container">
+                <h1>環保分享區</h1>
+                <p class="lead text-muted">歡迎將你的環保方式分享在下面</p>
+              </div>
+            </section>
+          
+            <div class="album py-5 bg-light">
+              <div class="container">
+          
+                <div class="row">
+                  {% for key, mes in messages.items() %}
+                    <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="{{mes.img}}" class="card-img-top" alt='{{ mes.name }}' width="250" height="250">
+                      <div class="card-body">
+                        <h4>{{mes.name}}</h4>
+                        <p class="card-text">{{ mes.title }}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <a href="/message/{{key}}" class="btn btn-sm btn-outline-secondary">內容</a>
+                            <a href="/comment/{{key}}" class="btn btn-sm btn-outline-secondary">評論</a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                  </div>
+              
+                  <a href="/leave/message"><h2>我也來留言</h2></a> 
+{% endblock %}                  
+  

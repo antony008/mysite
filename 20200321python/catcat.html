@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>白爛貓</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>白爛貓</h2>
+        <p>作者是麻糬爸</p>
+        {% for image in catcat %}
+          <h1>{{ image.title }}</h1>
+          <img src= "{{ image.url }}"/>
+        {% endfor %}
+        <p>更多資訊</p><a href="file:///C:/Users/anton/Documents/UTF-10.html">點我</a>
+    </body>
+</html>

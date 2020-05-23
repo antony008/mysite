@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>環保大家一起來</title>
+        <meta charest='utf-8'>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body>
+ 
+        <header>
+            <div class="collapse bg-dark" id="navbarHeader">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">關於</h4>
+                    <p class="text-white">我們讓地球的情況越來越差，所以大家要一起為地球貢獻一己之力，保護這顆藍色的星球吧!!</p>
+                    <a href='/'>首頁</a>
+                  </div>
+                  <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">聯絡我們</h4>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                      <li><a href="#" class="text-white">Like on Facebook</a></li>
+                      <li><a href="#" class="text-white">Email me</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+              <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                  
+                  <strong>Antony's Website</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </div>
+          </header>
+          
+        <main role="main">
+            
+            {% block main %}{% endblock %}    
+            
+
+        </main>
+          
+        
+        <footer class="text-muted">
+          <div class="container">
+
+            <h2 >大家一起做環保吧！改變從你開始，<br>只要每人開始改變一點點，整個世界就會變得更美好！！😁</h2>
+            <br>
+            <h2>網頁製作者: Antony (叫我老澤就好)</h2>
+            
+            
+          </div>
+        </footer>
+        
+
+        
+  </body>
+</html>
